@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="main.css">
+	<title>Web前端代码规范 v1.0 Beta</title>
+</head>
+<body>
+	<div class="header">
+		<div class="inner">
+			<i>✍</i>
+			<h1>Web 前端代码规范 v1.0 Beta</h1>
+			<p>一套利于团队协作的前端代码风格规范，用以书写标准、清晰、易维护的 HTML、CSS 和 JavaScript 代码</p>
+			<p>此规范参考 <a href="http://www.alloyteam.com/" target="_blank">腾讯 AlloyTeam 团队</a></p>
+		</div>
+	</div>
+	<div class="menu">
+		<h3 class="menu-title">目录</h3>
+		<div class="menu-list inner row" id="menuList">
+			<div class="col item-file">
+				<h4><a href="#fileNaming">文件/资源命名</a></h4>
+				<ol>
+					<li><a href="">通用规则</a></li>
+					<li><a href="">HTML 文件命名</a></li>
+					<li><a href="">CSS, SCSS 文件命名</a></li>
+					<li><a href="">JavaScript 文件命名</a></li>
+					<li><a href="">图片命名</a></li>
+				</ol>
+			</div>
+			<div class="col item-html">
+				<h4><a href="#menuHtml">HTML</a></h4>
+				<ol>
+					<li><a href="">语法</a></li>
+					<li><a href="">文档头</a></li>
+					<li><a href="">语言属性</a></li>
+					<li><a href="">IE兼容模式</a></li>
+					<li><a href="">字符编码</a></li>
+					<li><a href="">CSS 和 JavaScript 文件引入</a></li>
+					<li><a href="">属性顺序</a></li>
+					<li><a href="">Boolean属性</a></li>
+				</ol>
+			</div>
+			<div class="col item-css">
+				<h4><a href="">CSS, SCSS</a></h4>
+				<ol>
+					<li><a href="">语法</a></li>
+					<li><a href="">换行策略</a></li>
+					<li><a href="">声明顺序</a></li>
+					<li><a href="">属性简写</a></li>
+					<li><a href="">前缀属性</a></li>
+					<li><a href="">代码注释</a></li>					
+					<li><a href="">Class命名</a></li>
+					<li><a href="">选择器</a></li>
+					<li><a href="">代码组织</a></li>
+				</ol>
+			</div>
+			<div class="col item-js">
+				<h4><a href="">JavaScript</a></h4>
+				<ol>
+					<li><a href="">语法</a></li>
+					<li><a href="">变量命名</a></li>
+					<li><a href="">变量声明</a></li>
+					<li><a href="">全局变量</a></li>
+					<li><a href="">函数声明</a></li>
+					<li><a href="">换行策略</a></li>
+					<li><a href="">对象文本</a></li>
+					<li><a href="">数组</a></li>
+					<li><a href="">代码注释</a></li>
+
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="front inner">
+		<h3 class="menu-title">最佳原则</h3>
+		<ul class="menu-list">
+			<li>根据实际情况制定良好的代码规范；</li>
+			<li>遵守编码风格使代码更容易维护，对长期项目大有裨益；</li>
+			<li>实施代码规范增加代码可读性，提高协作开发效率；</li>
+			<li>实施代码规范减少低级 bug 的出现概率；</li>
+			<li>无论团队人数多少，代码应该同出一门。</li>
+		</ul>
+	</div>
+	<div class="cont-box">
+		<h3 class="section-title item-file" id="fileNaming">文件/资源命名</h3>
+		<div class="inner row">
+			<div class="col">
+				<h4>通用规则</h4>
+				<ul class="article">
+					<li>在 web 项目中，所有的文件名应该都遵循同一命名约定，使用语义化的文件命名，文件名要能“望文生义”，尽量避免使用拼音；</li>
+					<li>文件名只使用字母 <code>a-z</code>，数字 <code>0-9</code>，连字符 <code>-</code>，下划线 <code>_</code> 和句点 <code>.</code>；</li>
+					<li>文件命名以字母开头而不是数字，而以特殊字符开头命名的文件，一般都有特殊的含义与用处；</li>
+					<li>文件名中字母全部采用小写，多个单词用下划线分隔（识别效率较驼峰体高）；</li>
+					<li>如需缩写单词，则应使用约定俗成的缩写形式，如 btn、nav、num、img 等，不能自造单词，以免引起歧义。</li>
+				</ul>
+			</div>
+			<div class="col">
+				<pre class="pre-box">
+					<ol class="pre-cont">
+						<li><span class="comment">/* Not good */</span></li>
+						<li><span class="code">xinzengyonghu.jsp</span></li>
+						<li><span class="code">8926376.png</span></li>
+						<li><span class="code">CITYNAMES.json</span></li>
+						<li><span class="code">1001-scripts.js</span></li>
+						<li><span class="code">MyHome.php</span></li>
+						<li><span class="code">npld.css</span></li>
+						<li></li>
+						<li><span class="comment">/* Good */</span></li>
+						<li><span class="code">my_file_name.html</span></li>
+						<li><span class="code">man-made_list.html</span><span class="comment">  // man-made 是一个连字符单词</span></li>
+					</ol>
+				</pre>
+			</div>	
+		</div>
+		<div class="inner row">
+			<h4>HTML文件命名</h4>
+			<p class="article">参照文件命名通用规则。</p>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>CSS, SCSS 文件命名</h4>
+				<div class="article">
+					<p>参照文件命名通用规则。</p>
+					<p>以下划线 <code>_</code> 开头的 SCSS 文件不会被编译成一个 CSS 文件。</p>
+					<p>压缩版本的 CSS 文件，文件名后面需加上 <code>.min</code> 后缀。</p>
+				</div>
+			</div>
+			<div class="col">
+				<pre class="pre-box">
+					<ol class="pre-cont">
+						<li><span class="code">basic_layout.css</span></li>
+						<li><span class="code">_mixin.scss</span></li>
+						<li><span class="code">common.min.css</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>JavaScript 文件命名</h4>
+				<div class="article">
+					<p>参照文件命名通用规则。</p>
+					<p>压缩版本的 JavaScript 文件，文件名后面需加上 <code>.min</code> 后缀。</p>
+				</div>
+			</div>
+			<div class="col">
+				<pre class="pre-box">
+					<ol class="pre-cont">
+						<li><span class="code">format_string.js</span></li>
+						<li><span class="code">public.min.js</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>图片命名</h4>
+				<div class="article">
+					<p>参照文件命名通用规则。</p>
+					<p>图标类图片，需在文件名前面加上 <code>ico_</code> 前缀。</p>
+					<p>背景类图片，需在文件名前面加上 <code>bg_</code> 前缀。</p>
+					<p>雪碧图图片，需在文件名后面加上 <code>_sprite</code> 后缀。</p>
+					<p>Retina 图片，需在文件名后面加上 <code>_1x</code> 或 <code>_2x</code> 后缀来标记原图和 2 倍图。</p>
+				</div>
+			</div>
+			<div class="col">
+				<pre class="pre-box">
+					<ol class="pre-cont">
+						<li><span class="code">ico_user_default.png</span></li>
+						<li><span class="code">bg_login_poster.jpg</span></li>
+						<li><span class="code">ico_station_rank_sprite.png</span></li>
+						<li><span class="code">ico_tools_1x.png</span></li>
+						<li><span class="code">ico_tools_2x.png</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+	</div>
+	<div class="cont-box">
+		<h3 class="section-title item-html" id="menuHtml">HTML</h3>
+		<div class="inner row">
+			<div class="col">
+				<h4>语法</h4>
+				<ul class="article">
+					<li>缩进使用 1 个 <code>Tab</code>（占 4 个空格宽度）；</li>
+					<li>除 <code>head</code> 和 <code>body</code> 外，嵌套的节点应该缩进；</li>
+					<li>属性名全小写，用中划线做分隔符；</li>
+					<li>属性值使用双引号，不要使用单引号；</li>
+					<li>不要在自动闭合标签结尾处使用斜线（HTML5 规范指出他们是可忽略的）。</li>
+				</ul>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-html">
+					<div class="pre-title">html:</div>
+					<ol class="pre-cont">
+						<li><span class="code">&lt;!DOCTYPE html&gt;</span></li>
+						<li><span class="code">&lt;html&gt;</span></li>
+						<li><span class="code">&lt;head&gt;</span></li>
+						<li><span class="code">    &lt;title&gt;<span class="text">Page title</span>&lt;/title&gt;</span></li>
+						<li><span class="code">&lt;/head&gt;</span></li>
+						<li><span class="code">&lt;body&gt;</span></li>
+						<li><span class="code">    &lt;img src="images/company_logo.png" alt="Company"&gt;</span></li>
+						<li><span class="code">    &lt;h1 class="class-name"&gt;<span class="text">Hello, world!</span>&lt;/h1&gt;</span></li>
+						<li><span class="code">&lt;/body&gt;</span></li>
+						<li><span class="code">&lt;/html&gt;</span></li>
+					</ol>
+				</pre>
+			</div>	
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>文档头</h4>
+				<div class="article">
+					<p>页面开头必须有文档头声明，推荐使用 HTML5 简单的 doctype 声明来启用标准模式，使页面在每个浏览器中尽可能一致的展现。
+					<p>按照惯例，doctype 应大写。</p>							
+				</div>		
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-html">
+					<div class="pre-title">html:</div>
+					<ol class="pre-cont">
+						<li><span class="code">&lt;!DOCTYPE html&gt;</span></li>
+						<li><span class="code">&lt;html&gt;</span></li>
+						<li><span class="code text">    ...</span></li>
+						<li><span class="code">&lt;/html&gt;</span></li>
+					</ol>
+				</pre>
+			</div>	
+		</div>
+	</div>
+<div>
+	在IDE里把tab键设为4个空格
+	首先，使用空格有4或者8或者其他数字对齐，对于几个人的代码，如果没有约定很难统一，比如拷贝代码的时候，虽然最左端对齐了，但下层缩进空格数不一样，还得一行一行调整。
+	其次，我使用tab的最重要原因是，因为tab可以替换啊！在支持正则搜索的编辑器里，使用\t就可以搜索全部tab然后替换成你想要的不论多少个空格
+
+	常用操作动词：
+		新增：add
+		删除：del
+		编辑：edit
+		查询：query		
+		查看：view
+		获取：get
+		设置：set
+		构建：build
+		校验：check
+		确认：confirm
+		保存：save
+		取消：cancel
+</div>
+		<pre class="pre-box">
+			<div class="pre-title">html:</div>
+			<ol class="pre-cont">
+				<li><span class="code">format_string.js</span></li>
+				<li><span class="code">public.min.js</span></li>
+			</ol>
+		</pre>	
+	<script src="router.js"></script>
+</body>
+</html>

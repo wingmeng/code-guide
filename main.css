@@ -1,0 +1,71 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,pre,p,blockquote{margin:0;padding:0}a{text-decoration:none;background-color:transparent}a:active,a:hover{outline-width:0}a:focus{outline:1px dotted}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;font-size:62.5%}body{font-size:14px;line-height:1.8;color:#333;}h1,h2,h3,h4,h5,h6{font-weight:normal}abbr{border-bottom:1px dotted;cursor:help}b{font-weight:normal}i{font-style:normal}strong{font-weight:bold}em{font-style:italic}mark{background-color:#d2e5ff;color:#000}pre{word-wrap:break-word;overflow:auto}small{font-size:85.7%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}table{border-collapse:collapse;border-spacing:0}th{text-align:left}img{border-style:none;width:auto\9;height:auto;max-width:100%;vertical-align:top}
+html{-webkit-font-smoothing:antialiased}body{font-family:"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","WenQuanYi Micro Hei",Tahoma,sans-serif;-ms-text-autospace:ideograph-alpha ideograph-numeric ideograph-parenthesis}code,kbd,pre{font-family:Monaco, Menlo, Consolas, 'Courier New', Courier, Monospace}
+a {color:#06b;}
+a:hover {text-decoration:underline;}
+h3 {color:#303030; background:#dedede;}
+
+.inner {max-width:100%; padding:0 3em; box-sizing:border-box;}
+.section-title {padding:0.6em 1.25em; margin:.8em 0; text-align:center; font-size:2em; border-left:10px solid transparent;}
+
+.row {width:100%; margin:0 -8px;}
+.row:before, .row:after {content:''; clear:both; display:block; height:0; overflow:hidden;}
+.col {float:left; padding:0 8px; box-sizing:border-box;}
+
+code {padding:1px .4em 2px; font-size:90%; color:#66d9ef; background:#272822;}
+.pre-box {max-width:100%; padding:0; margin:20px 0; overflow:hidden; white-space:normal; word-break:break-all; word-wrap:break-word; font:14px/20px monaco, menlo, consolas, 'courier new', courier, monospace; color:#666; background-color:#444444; border:1px solid #272822; border-radius:3px;}
+	.pre-title {padding-left:10px; margin:10px 0; line-height:1.5; color:#fff;}
+	.pre-cont {padding:8px; margin-left:42px; background:#272822;}
+	.code {color:#66d9ef;}
+	.code, .comment {white-space:pre; white-space:pre-wrap;}
+	.lang-html .text {color:#fff;}
+
+.header {padding:2.5em 0 4em; text-align:center; color:#939aa3; background:#3b3f45;}
+	.header i {font-size:8em; line-height:1;}
+	.header h1 {font-size:3em; color:#fff;}
+	.header p {font-size:1.15em;}
+
+.menu {box-sizing:border-box;}
+	.menu-title {padding:0.6em 1.25em; font-size:2.3em;}
+	.menu-list {font-size:1.1em;}
+	.menu-list > .col {width:25%; border-top:3px solid transparent; -webkit-transition:ease-in-out .2s; transition:ease-in-out .2s;}
+	.item-file,
+	.menu-list > .item-file:hover {border-color:#90db47;}
+	.item-html,
+	.menu-list > .item-html:hover {border-color:#f1634e;}
+	.item-css,
+	.menu-list > .item-css:hover {border-color:#439fd0;}
+	.item-js,
+	.menu-list > .item-js:hover {border-color:#f1ba4e;}
+	.menu-list ol {margin-left:1em; color:#666;}
+	.menu-list h4 {padding:.5em 0; font-size:1.6em;}
+
+.front {color:#666;}
+	.front > h3 {padding-left:0; padding-bottom:0; background:transparent;}
+	.front > ul {padding-left:1em; font-size:1.2em; list-style-type:disc;}
+
+.cont-box {padding-top:1em;}
+	.cont-box > .inner {padding-bottom:1em;}
+	.cont-box > .inner + .inner {padding-top:1em; border-top:1px solid #ddd;}
+	.cont-box h4 {font-size:1.8em;}
+	.cont-box h4:before {content:attr(data-idx)'.';}
+	.cont-box .col {width:50%;}
+	.article {padding-left:1.4em; font-size:1.2em;}
+	.cont-box .pre-box {margin-top:3.2em;}
+
+	
+@media all and (max-width:1000px) {
+	body {font-size:12px;}
+}
+@media all and (max-width:900px) {
+	.cont-box .col {width:100%;}
+	.cont-box .pre-box {margin-top:20px;}
+}
+@media all and (max-width:650px) {
+	.menu-list > .col {width:50%;}
+}
+@media all and (max-width:480px) {
+	.header {padding:1em 0 2em; font-size:70%;}	
+}
+@media all and (max-width:320px) {
+	.menu-list > .col {width:100%;}
+}
