@@ -41,7 +41,7 @@
 					<li><a href="">渲染模式</a></li>
 					<li><a href="">CSS 和 JavaScript 文件引入</a></li>
 					<li><a href="">属性顺序</a></li>
-					<li><a href="">Boolean属性</a></li>
+					<li><a href="">Boolean 属性</a></li>
 				</ol>
 			</div>
 			<div class="col item-css">
@@ -193,6 +193,7 @@
 			<div class="col">
 				<h4>语法</h4>
 				<ul class="article">
+					<li>根据语义选择合适的标签，不要使用 HTML5 规范中已经被废弃的标签；</li>
 					<li>标签名全小写；</li>
 					<li>属性名全小写，用中划线做分隔符；</li>
 					<li>属性值使用双引号，不要使用单引号；</li>
@@ -204,12 +205,14 @@
 					<div class="pre-title">html:</div>
 					<ol class="pre-cont">
 						<li><span class="comment">&lt;!-- Not good --&gt;</span></li>
+						<li><span class="code">&lt;center class=<span class="atv">"header"</span>&gt;<span class="text">...</span>&lt;/center&gt;</span></li>
 						<li><span class="code">&lt;DIV CLASS=<span class="atv">"my-style"</span>&gt;<span class="text">...</span>&lt;/DIV&gt;</span></li>
 						<li><span class="code">&lt;span data-fmtDate=<span class="atv">"1507593600000"</span>&gt;<span class="text">2017-10-10</span>&lt;/span&gt;</span></li>
 						<li><span class="code">&lt;a href=<span class="atv">'http://github.com'</span>&gt;<span class="text">GitHub</span>&lt;/a&gt;</span></li>
 						<li><span class="code">&lt;input type=<span class="atv">"text"</span> /&gt;</span></li>
 						<li></li>
 						<li><span class="comment">&lt;!-- Good --&gt;</span></li>
+						<li><span class="code">&lt;header class=<span class="atv">"header"</span>&gt;<span class="text">...</span>&lt;/header&gt;</span></li>
 						<li><span class="code">&lt;div class=<span class="atv">"my-style"</span>&gt;<span class="text">...</span>&lt;/div&gt;</span></li>
 						<li><span class="code">&lt;span data-fmt-date=<span class="atv">"1507593600000"</span>&gt;<span class="text">2017-10-10</span>&lt;/span&gt;</span></li>
 						<li><span class="code">&lt;a href=<span class="atv">"http://github.com"</span>&gt;<span class="text">GitHub</span>&lt;/a&gt;</span></li>
@@ -222,8 +225,10 @@
 			<div class="col">
 				<h4>缩进</h4>
 				<ul class="article">
-					<li>缩进使用 1 个 <code>Tab</code>（占 4 个空格宽度）；</li>
-					<li>除 <code>head</code> 和 <code>body</code> 外，嵌套的节点应该缩进。</li>
+					<li>缩进使用 1 个 <code>Tab</code>（占 4 个空格宽度，某些 IDE 需要手动把 Tab 键设为 4 个空格宽度）；</li>
+					<li>除 <code>head</code> 和 <code>body</code> 外，嵌套的节点应该缩进；</li>
+					<li>每个块级、列表、表格元素单独占一行，每个子元素都相对父元素缩进；</li>
+					<li>坚决不要使用 Tab 和空格混搭的缩进方式。</li>
 				</ul>
 				<div class="article notes">
 					<strong>使用 Tab 缩进比空格缩进有哪些优势？</strong>
@@ -257,7 +262,7 @@
 				<h4>文档头</h4>
 				<div class="article">
 					<p>页面开头必须有文档头声明，推荐使用 HTML5 简单的 doctype 声明来启用标准模式，使页面在每个浏览器中尽可能一致的展现。</p>
-					<p>按照惯例，doctype 应大写。</p>							
+					<p>按照惯例，doctype 应大写。</p>
 				</div>		
 			</div>
 			<div class="col">
@@ -276,8 +281,8 @@
 			<div class="col">
 				<h4>字符编码</h4>
 				<div class="article">
-					<p>通过声明一个明确的字符编码，让浏览器轻松、快速的确定适合网页内容的渲染方式。</p>
-					<p>字符编码通常设为 <code>UTF-8</code> 。</p>							
+					<p>在 HTML 中指定字符编码，让浏览器轻松、快速的确定适合网页内容的渲染方式。</p>
+					<p>字符编码通常设为 <code>UTF-8</code> 。</p>
 				</div>		
 			</div>
 			<div class="col">
@@ -299,8 +304,8 @@
 			<div class="col">
 				<h4>渲染模式</h4>
 				<div class="article">
-					<p>页面开头必须有文档头声明，推荐使用 HTML5 简单的 doctype 声明来启用标准模式，使页面在每个浏览器中尽可能一致的展现。
-					<p>按照惯例，doctype 应大写。</p>							
+					<p>指定使用本地最高版本的 IE 来渲染页面。</p>
+					<p>指定优先采用 webkit 内核来渲染页面（目前仅 360 浏览器支持）。</p>
 				</div>		
 			</div>
 			<div class="col">
@@ -309,16 +314,107 @@
 					<ol class="pre-cont">
 						<li><span class="code">&lt;!DOCTYPE html&gt;</span></li>
 						<li><span class="code">&lt;html&gt;</span></li>
+						<li><span class="code">&lt;head&gt;</span></li>
+						<li><span class="code">    &lt;meta http-equiv=<span class="atv">"X-UA-Compatible"</span> content=<span class="atv">"IE=Edge"</span>&gt;</span></li>
+						<li><span class="code">    &lt;meta name=<span class="atv">"renderer"</span> content=<span class="atv">"webkit"</span>&gt;</span></li>
+						<li><span class="code">&lt;/head&gt;</span></li>
 						<li><span class="code text">    ...</span></li>
 						<li><span class="code">&lt;/html&gt;</span></li>
 					</ol>
 				</pre>
 			</div>	
 		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>CSS 和 JavaScript 文件引入</h4>
+				<ul class="article">
+					<li>无需为引入的 CSS 和 JavaScritp 指明 type 属性（在 HTML5 规范中，text/css 和 text/javascript 分别是他们的默认值，省略后对页面无影响）；</li>
+					<li>通常引入的 CSS 文件放在 <code>&lt;head&gt;&lt;/head&gt;</code> 内；</li>
+					<li>一般情况下，JavaScript 脚本应放在页面底部，<code>&lt;/body&gt;</code> 标签前面，以免阻塞页面加载，同时也避免了文档加载完成前 JS 无法获取 DOM 元素的问题。</li>
+				</ul>		
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-html">
+					<div class="pre-title">html:</div>
+					<ol class="pre-cont">
+						<li><span class="code">&lt;!DOCTYPE html&gt;</span></li>
+						<li><span class="code">&lt;html&gt;</span></li>
+						<li><span class="code">&lt;head&gt;</span></li>
+						<li><span class="code">    &lt;link rel=<span class="atv">"stylesheet"</span> href=<span class="atv">"my_style.css"</span>&gt;</span></li>
+						<li><span class="code">    &lt;style&gt;</span></li>
+						<li><span class="code text">        ...</span></li>
+						<li><span class="code">    &lt;/style&gt;</span></li>
+						<li><span class="code">&lt;/head&gt;</span></li>
+						<li><span class="code">&lt;body&gt;</span></li>
+						<li><span class="code text">    ...</span></li>
+						<li><span class="code">    &lt;script src=<span class="atv">"my_script.js"</span>&gt;&lt;/script&gt;</span></li>
+						<li><span class="code">    &lt;script&gt;</span></li>
+						<li><span class="code text">        ...</span></li>
+						<li><span class="code">    &lt;/script&gt;</span></li>
+						<li><span class="code">&lt;/body&gt;</span></li>
+						<li><span class="code">&lt;/html&gt;</span></li>
+					</ol>
+				</pre>
+			</div>	
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>属性顺序</h4>
+				<div class="article">
+					<p>HTML 属性应当按照特定的顺序依次排列，确保代码的易读性和可维护性。</p>
+					<p>Class 用于标识高度可复用组件，因此应该排在首位；id 用于标识具体组件，排在第二位。</p>
+				</div>		
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-html">
+					<ol class="pre-cont">
+						<li><span class="atv">class</span></li>
+						<li><span class="atv">id</span></li>
+						<li><span class="atv">name</span></li>
+						<li><span class="atv">data-*</span></li>
+						<li><span class="atv">src, for, type, href, value , max-length, max, min, pattern</span></li>
+						<li><span class="atv">placeholder, title, alt</span></li>
+						<li><span class="atv">aria-*, role</span></li>
+						<li><span class="atv">required, readonly, disabled</span></li>
+					</ol>
+				</pre>
+			</div>	
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>Boolean 属性</h4>
+				<div class="article">
+					<p>HTML5 规范中，boolean 属性不需要声明属性值；</p>
+					<p>Boolean 属性的存在表示取值为 true，不存在则表示取值为 false。</p>
+				</div>		
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-html">
+					<div class="pre-title">html:</div>
+					<ol class="pre-cont">
+						<li><span class="comment">&lt;!-- Not good --&gt;</span></li>
+						<li><span class="code">&lt;input type=<span class="atv">"text"</span> disabled=<span class="atv">"disabled"</span>&gt;</span></li>
+						<li><span class="code">&lt;input type=<span class="atv">"text"</span> readonly=<span class="atv">"true"</span>&gt;</span></li>
+						<li><span class="code">&lt;input type=<span class="atv">"checkbox"</span> checked=<span class="atv">"checked"</span>&gt;</span></li>
+						<li><span class="code">&lt;select&gt;</span></li>
+						<li><span class="code">    &lt;option value=<span class="atv">"1"</span> selected=<span class="atv">"selected"</span>&gt;<span class="text">1</span>&lt;/option&gt;</span></li>
+						<li><span class="code">&lt;/select&gt;</span></li>
+						<li><span class="code">&lt;audio src=<span class="atv">"my_voice.mp3"</span> controls=<span class="atv">"controls"</span>&gt;</span></li>
+						<li></li>
+						<li><span class="comment">&lt;!-- Good --&gt;</span></li>
+						<li><span class="code">&lt;input type=<span class="atv">"text"</span> <span class="atv">disabled</span>&gt;</span></li>
+						<li><span class="code">&lt;input type=<span class="atv">"text"</span> <span class="atv">readonly</span>&gt;</span></li>
+						<li><span class="code">&lt;input type=<span class="atv">"checkbox"</span> <span class="atv">checked</span>&gt;</span></li>
+						<li><span class="code">&lt;select&gt;</span></li>
+						<li><span class="code">    &lt;option value=<span class="atv">"1"</span> <span class="atv">selected</span>&gt;<span class="text">1</span>&lt;/option&gt;</span></li>
+						<li><span class="code">&lt;/select&gt;</span></li>
+						<li><span class="code">&lt;audio src=<span class="atv">"my_voice.mp3"</span> <span class="atv">controls</span>&gt;</span></li>
+					</ol>
+				</pre>
+			</div>	
+		</div>
 	</div>
 <div>
-	在IDE里把tab键设为4个空格
-	
 
 	常用操作动词：
 		新增：add
