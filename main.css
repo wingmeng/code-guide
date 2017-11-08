@@ -3,10 +3,16 @@ html{-webkit-font-smoothing:antialiased}body{font-family:"Helvetica Neue",Helvet
 a {color:#06b;}
 a:hover {text-decoration:underline;}
 h3 {color:#303030; background:#dedede;}
+ul ul, ol ul {list-style-type:circle;}
+
+@media all and (max-width:1000px) {
+	body {font-size:12px;}
+}
 
 .inner {max-width:100%; padding:0 3em; box-sizing:border-box;}
 .section-title {padding:0.6em 1.25em; margin:.8em 0; text-align:center; font-size:2em; border-left:10px solid transparent;}
 .article {padding-left:1.4em; font-size:1.2em;}
+.article .article {margin-bottom:1em; font-size:1em;}
 .notes {margin-top:2em; font-size:1em; color:#666;}
 	.notes > ul {list-style-type:circle;}
 
@@ -28,6 +34,10 @@ code {padding:1px .4em 2px; font-size:90%; color:#66d9ef; background:#272822;}
 	.header h1 {font-size:3em; color:#fff;}
 	.header p {font-size:1.15em;}
 
+	@media all and (max-width:480px) {
+		.header {padding:1em 0 2em; font-size:70%;}
+	}
+
 .menu {box-sizing:border-box;}
 	.menu-title {padding:0.6em 1.25em; font-size:2.3em;}
 	.menu-list {font-size:1.1em;}
@@ -43,6 +53,13 @@ code {padding:1px .4em 2px; font-size:90%; color:#66d9ef; background:#272822;}
 	.menu-list ol {margin-left:1em; color:#666;}
 	.menu-list h4 {padding:.5em 0; font-size:1.6em;}
 
+	@media all and (max-width:650px) {
+		.menu-list > .col {width:50%;}
+	}
+	@media all and (max-width:320px) {
+		.menu-list > .col {width:100%;}
+	}
+
 .front {color:#666;}
 	.front > h3 {padding-left:0; padding-bottom:0; background:transparent;}
 	.front > ul {padding-left:1em; font-size:1.2em; list-style-type:disc;}
@@ -55,24 +72,14 @@ code {padding:1px .4em 2px; font-size:90%; color:#66d9ef; background:#272822;}
 	.cont-box .col {width:50%;}
 	.cont-box .pre-box {margin-top:3.2em;}
 
+	@media all and (max-width:900px) {
+		.cont-box .col {width:100%;}
+		.cont-box .pre-box {margin-top:20px;}
+	}
+
+.footer {padding-top:2em; margin-top:2em; text-align:center; font-size:1.2em; color:#666; border-top:1px solid #ddd;}
+
 .back-top {text-align:right;}
 	.back-top:before {content:'\00A0';}
-	.back-top-btn {position:fixed; bottom:2em; width:2.8em; line-height:2.8em; text-align:center; color:#fff; background:#ccc; border-radius:8px; -webkit-transition:ease-in-out .2s; transition:ease-in-out .2s;}	
+	.back-top-btn {position:fixed; bottom:2em; width:2.8em; line-height:2.8em; text-align:center; color:#fff; background:#ccc; border-radius:8px; -webkit-transition:ease-in-out .2s; transition:ease-in-out .2s;}
 	.back-top-btn:hover {background:#06b; text-decoration:none;}
-	
-@media all and (max-width:1000px) {
-	body {font-size:12px;}
-}
-@media all and (max-width:900px) {
-	.cont-box .col {width:100%;}
-	.cont-box .pre-box {margin-top:20px;}
-}
-@media all and (max-width:650px) {
-	.menu-list > .col {width:50%;}
-}
-@media all and (max-width:480px) {
-	.header {padding:1em 0 2em; font-size:70%;}	
-}
-@media all and (max-width:320px) {
-	.menu-list > .col {width:100%;}
-}

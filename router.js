@@ -3,7 +3,7 @@ var menuLists = document.querySelectorAll('#menuList > div.col'),
 for (var i = 0; i < menuLists.length; i++) {
     var menuLink = menuLists[i] ? menuLists[i].querySelector('h4 > a') : null,
         contTarget = contBoxes[i] ? contBoxes[i].querySelector('.section-title') : null;
-    if (menuLink && contTarget) {        
+    if (menuLink && contTarget) {
         if (getHrefStr(menuLink) === contTarget.id) {
             var subMenuLinks = menuLists[i].querySelectorAll('ol a'),
                 subContBoxes = contBoxes[i].querySelectorAll('div.inner');
@@ -15,7 +15,7 @@ for (var i = 0; i < menuLists.length; i++) {
                     subContTarget.setAttribute('data-idx', (j + 1));  // 二级内容标题序号
                     subContTarget.id = getHrefStr(subMenuLinks[j]);  // 二级内容标题 id
                 }
-            }    
+            }
         }
     }
 }

@@ -63,15 +63,20 @@
 			<div class="col item-js">
 				<h4><a href="#menuJS">JavaScript</a></h4>
 				<ol>
-					<li><a href="">语法</a></li>
-					<li><a href="">变量命名</a></li>
-					<li><a href="">变量声明</a></li>
-					<li><a href="">全局变量</a></li>
-					<li><a href="">函数声明</a></li>
-					<li><a href="">换行策略</a></li>
-					<li><a href="">对象文本</a></li>
-					<li><a href="">数组</a></li>
+					<li><a href="">通用规则</a></li>
+					<li><a href="">缩进</a></li>
+					<li><a href="">空格</a></li>
+					<li><a href="">换行与空行</a></li>
+					<li><a href="">分号</a></li>
+					<li><a href="">引号</a></li>
+					<li><a href="">括号</a></li>
 					<li><a href="">代码注释</a></li>
+					<li><a href="">变量命名</a></li>
+					<li><a href="">函数</a></li>
+					<li><a href="">对象</a></li>
+					<li><a href="">null</a></li>
+					<li><a href="">undefined</a></li>
+					<li><a href="">杂项</a></li>
 				</ol>
 			</div>
 		</div>
@@ -84,7 +89,7 @@
 			<li>遵守编码风格使代码更容易维护，对长期项目大有裨益；</li>
 			<li>实施代码规范增加代码可读性，提高协作开发效率；</li>
 			<li>实施代码规范减少低级 bug 的出现概率；</li>
-			<li>提供相关工具（插件），保障代码规范的无缝接入。<a href="#">详情</a>（玩命整理中...）</li>
+			<li>提供相关工具（插件），保障代码规范的无缝接入。<a href="#menuTools">详情</a></li>
 		</ul>
 	</div>
 	<div class="cont-box">
@@ -170,7 +175,7 @@
 				<h4>图片命名</h4>
 				<div class="article">
 					<p>参照文件命名通用规则。</p>
-					<ul>
+					<ul class="article">
 						<li>图标类图片，需在文件名前面加上 <code>ico_</code> 前缀。</li>
 						<li>背景类图片，需在文件名前面加上 <code>bg_</code> 前缀。</li>
 						<li>雪碧图图片，需在文件名后面加上 <code>_sprite</code> 后缀。</li>
@@ -209,7 +214,7 @@
 			</div>
 			<div class="col">
 				<pre class="pre-box lang-html">
-					<div class="pre-title">html:</div>
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li>&lt;!-- Not good --&gt;</li>
 						<li><span class="code">&lt;center class=<span class="atv">"header"</span>&gt;<span class="text">...</span>&lt;/center&gt;</span></li>
@@ -241,7 +246,7 @@
 				</ul>
 				<div class="article notes">
 					<strong>使用 Tab 缩进比空格缩进有哪些优势？</strong>
-					<ul>
+					<ul class="article">
 						<li>空格缩进一般通过键入 2 或 4 个空格来缩进对齐，其按键成本比 Tab 高得多（有些 IDE 可以设置空格宽度），使用 Tab 缩进更快捷；</li>
 						<li>使用 Shift + Tab 组合键可以选取多行向前缩进，使用空格缩进做不到；</li>
 						<li>Tab 可以替换，在支持正则搜索的编辑器里，使用 <code>\t</code> 可以匹配搜索全部 Tab，空格缩进做不到。</li>
@@ -250,7 +255,7 @@
 			</div>
 			<div class="col">
 				<pre class="pre-box lang-html">
-					<div class="pre-title">html:</div>
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li><span class="code">&lt;!DOCTYPE html&gt;</span></li>
 						<li><span class="code">&lt;html&gt;</span></li>
@@ -276,7 +281,7 @@
 			</div>
 			<div class="col">
 				<pre class="pre-box lang-html">
-					<div class="pre-title">html:</div>
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li><span class="code">&lt;!DOCTYPE html&gt;</span></li>
 						<li><span class="code">&lt;html&gt;</span></li>
@@ -296,7 +301,7 @@
 			</div>
 			<div class="col">
 				<pre class="pre-box lang-html">
-					<div class="pre-title">html:</div>
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li><span class="code">&lt;!DOCTYPE html&gt;</span></li>
 						<li><span class="code">&lt;html&gt;</span></li>
@@ -319,7 +324,7 @@
 			</div>
 			<div class="col">
 				<pre class="pre-box lang-html">
-					<div class="pre-title">html:</div>
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li><span class="code">&lt;!DOCTYPE html&gt;</span></li>
 						<li><span class="code">&lt;html&gt;</span></li>
@@ -344,7 +349,7 @@
 			</div>
 			<div class="col">
 				<pre class="pre-box lang-html">
-					<div class="pre-title">html:</div>
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li><span class="code">&lt;!DOCTYPE html&gt;</span></li>
 						<li><span class="code">&lt;html&gt;</span></li>
@@ -399,7 +404,7 @@
 			</div>
 			<div class="col">
 				<pre class="pre-box lang-html">
-					<div class="pre-title">html:</div>
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li><span class="code">&lt;input type=<span class="atv">"text"</span> disabled=<span class="atv">"disabled"</span>&gt;</span><span class="comment">  &lt;!-- Not good --&gt;</span></li>
 						<li><span class="code">&lt;input type=<span class="atv">"text"</span> <span class="atv">disabled</span>&gt;</span><span class="comment">  &lt;!-- Good --&gt;</span></li>
@@ -433,15 +438,16 @@
 				<h4>通用规则</h4>
 				<ul class="article">
 					<li>代码风格上要以具有可读性、可维护性为基本原则，压缩代码的工作交给工具去做；</li>
+					<li>css 文件使用无 BOM 的 <code>UTF-8</code> 编码；</li>
 					<li>不允许有空的规则；</li>
 					<li>元素选择器用小写字母；</li>
 					<li>不要在一个文件里出现两个相同的规则；</li>
 					<li>每个属性声明末尾都要加分号。</li>
-				</ul>	
+				</ul>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-css">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li><span class="code">.style {}</span><span class="comment">  /*-- Not good --*/</span></li>
 						<li></li>
@@ -459,11 +465,11 @@
 				<h4>缩进</h4>
 				<p class="article">
 					与 HTML 缩进方式一样，缩进使用 1 个 <code>Tab</code>（占 4 个空格宽度）。
-				</p>	
+				</p>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-css">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li><span class="code">.style {</span></li>
 						<li><span class="code atv">    width: 100px;</span></li>
@@ -486,11 +492,11 @@
 					<li>属性值中的 <code>,</code> 后加空格；</li>
 					<li>SCSS 中的运算符前后要加空格；</li>
 					<li>每行行末不要有多余的空格。</li>
-				</ul>	
+				</ul>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-css">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li>/* Not good */</li>
 						<li><span class="code">.style {</span></li>
@@ -562,11 +568,11 @@
 					<li>多个选择器的分隔符 <code>,</code> 后要换行；</li>
 					<li>相邻的两段样式之间要用一个空行隔开；</li>
 					<li>属性组之间需要有一个空行隔开。属性分组规范请参阅“<strong>声明顺序</strong>”部分。</li>
-				</ul>	
+				</ul>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-css">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li>/* Not good */</li>
 						<li><span class="code">.style</span></li>
@@ -611,15 +617,15 @@
 				</ul>
 				<div class="article notes">
 					<strong>CSS url 的内容加引号有什么好处？</strong>
-					<ul>
+					<ul class="article">
 						<li>降低内容路径被 XSS 注入攻击的风险；</li>
 						<li>避免一些浏览器兼容问题。</li>
 					</ul>
-				</div>	
+				</div>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-css">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li><span class="code">.style:before {</span></li>
 						<li><span class="code atv">    content: "";</span></li>
@@ -637,7 +643,7 @@
 		<div class="inner row">
 			<div class="col">
 				<h4>注释</h4>
-				<ul class="article">					
+				<ul class="article">
 					<li>注释使用 <code>/* 注释内容 */</code>；
 					<li>SCSS 中单行注释用 <code>// 注释内容</code>，不会输出到编译后的 CSS 中；</li>
 					<li>如果希望将 SCSS 中的注释保留输出（即使在 compressed 输出模式下），则使用 <code>/*! 注释内容 */</code>；</li>
@@ -648,11 +654,11 @@
 				<p class="article notes">
 					<strong>注：</strong>
 					<code>//</code> 注释只用于 SCSS 中。
-				</p>	
+				</p>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-css">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li>/* Modal header */</li>
 						<li><span class="code">.modal-header {</span></li>
@@ -687,11 +693,11 @@
 					<li>SCSS 中的变量和 placeholder 使用小写字母，中划线分隔；</li>
 					<li>id 采用小驼峰式命名；</li>
 					<li>SCSS 中的函数、混合采用小驼峰式命名。</li>
-				</ul>	
+				</ul>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-css">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li>/* Not good */</li>
 						<li><span class="code">.b { <span class="comment">...</span> }</span></li>
@@ -739,18 +745,18 @@
 				<h4>声明顺序</h4>
 				<div class="article">
 					推荐的样式编写顺序依次为：
-					<ul>
+					<ul class="article">
 						<li>Positioning（定位）</li>
 						<li>Box model（盒模型）</li>
 						<li>Typographic（排版）</li>
 						<li>Visual（视觉）</li>
 						<li>Misc（杂项）</li>
 					</ul>
-				</div>	
+				</div>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-css">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li><span class="code">.declaration-order {</span></li>
 						<li><span class="comment">    /* Positioning */</span></li>
@@ -760,24 +766,24 @@
 						<li><span class="code atv">    bottom: 0;</span></li>
 						<li><span class="code atv">    left: 0;</span></li>
 						<li><span class="code atv">    z-index: 100;</span></li>
-						<li></li>	
+						<li></li>
 						<li><span class="comment">    /* Box model */</span></li>
 						<li><span class="code atv">    display: block;</span></li>
 						<li><span class="code atv">    float: right;</span></li>
 						<li><span class="code atv">    width: 100px;</span></li>
 						<li><span class="code atv">    height: 100px;</span></li>
-						<li></li>	
+						<li></li>
 						<li><span class="comment">    /* Typography */</span></li>
 						<li><span class="code atv">    font: normal 13px "Helvetica Neue", sans-serif;</span></li>
 						<li><span class="code atv">    line-height: 1.5;</span></li>
 						<li><span class="code atv">    color: #333;</span></li>
 						<li><span class="code atv">    text-align: center;</span></li>
-						<li></li>	
+						<li></li>
 						<li><span class="comment">    /* Visual */</span></li>
 						<li><span class="code atv">    background-color: #f5f5f5;</span></li>
 						<li><span class="code atv">    border: 1px solid #e5e5e5;</span></li>
 						<li><span class="code atv">    border-radius: 3px;</span></li>
-						<li></li>	
+						<li></li>
 						<li><span class="comment">    /* Misc */</span></li>
 						<li><span class="code atv">    opacity: 1;</span></li>
 						<li><span class="code">}</span></li>
@@ -796,8 +802,8 @@
 				</ul>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-css">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li>/* Not good */</li>
 						<li><span class="code">.style {<span class="atv">color: #333333;</span>}</li>
@@ -822,8 +828,8 @@
 				<p class="article notes">如非必要，尽量不要手写前缀属性，推荐使用自动化工具来处理，例如：autoprefixer。</p>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-css">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
 						<li>/* Not good */</li>
 						<li><span class="code">.style {</span></li>
@@ -856,52 +862,575 @@
 	</div>
 	<div class="cont-box">
 		<h3 class="section-title item-js" id="menuJS">JavaScript</h3>
+		<div class="inner">
+			<h4>通用规则</h4>
+			<ul class="article">
+				<li>代码是写给人看的，代码排版要顾及可读性、可维护性；</li>
+				<li>代码尽量放在 <code>.js</code> 文件中，页面只放当前页面专用的 JS 代码；</li>
+				<li>js 文件使用无 BOM 的 <code>UTF-8</code> 编码；</li>
+				<li>代码中必须包含必要的注释；</li>
+				<li>不允许有空的代码块；</li>
+				<li>行尾不要有空白字符。</li>
+			</ul>
+		</div>
 		<div class="inner row">
 			<div class="col">
-				<h4>通用规则</h4>
-				<ul class="article">
-					<li>代码风格上要以具有可读性、可维护性为基本原则，压缩代码的工作交给工具去做；</li>
-					<li>不允许有空的规则；</li>
-					<li>元素选择器用小写字母；</li>
-					<li>不要在一个文件里出现两个相同的规则；</li>
-					<li>每个属性声明末尾都要加分号。</li>
-				</ul>	
+				<h4>缩进</h4>
+				<p class="article">
+					与 HTML 缩进方式一样，缩进使用 1 个 <code>Tab</code>（占 4 个空格宽度）。
+				</p>
 			</div>
 			<div class="col">
-				<pre class="pre-box lang-html">
-					<div class="pre-title">css:</div>
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
 					<ol class="pre-cont">
-						<li><span class="code">.style {}</span><span class="comment">  /*-- Not good --*/</span></li>
+						<li><span class="code">var<span class="atv"> x = 1,</span></span></li>
+						<li><span class="code">    <span class="atv">y = 1;</span></span></li>
 						<li></li>
-						<li><span class="code">UL > LI {<span class="atv">font-size: 18px;</span>}</span><span class="comment">  /*-- Not good --*/</span></li>
-						<li><span class="code">ul > li {<span class="atv">font-size: 18px;</span>}</span><span class="comment">  /*-- Good --*/</span></li>
-						<li></li>
-						<li><span class="code">.style {<span class="atv">color: red</span>}</span><span class="comment">  /*-- Not good --*/</span></li>
-						<li><span class="code">.style {<span class="atv">color: red;</span>}</span><span class="comment">  /*-- Good --*/</span></li>
+						<li><span class="code">if (<span class="atv">x === y</span>) {</span></li>
+						<li><span class="comment">    ...</span></li>
+						<li><span class="code">} else {</span></li>
+						<li><span class="comment">    ...</span></li>
+						<li><span class="code">}</span></li>
 					</ol>
 				</pre>
 			</div>
 		</div>
-	</div>	
-<div>
-
-	常用操作动词：
-		新增：add
-		删除：del
-		编辑：edit
-		查询：query
-		查看：view
-		获取：get
-		设置：set
-		构建：build
-		校验：check
-		确认：confirm
-		保存：save
-</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>空格</h4>
+				<ul class="article">
+					<li>运算符前后要加空格：<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, <code>=</code>, <code>&lt;</code>, <code>&gt;</code>等；</li>
+					<li>代码块 <code>{</code> 前要加空格</li>
+					<li>下列关键字前后都需要加空格：<code>else</code>, <code>catch</code>, <code>finally</code>；</li>
+					<li>下列关键字后需要加空格：<code>if</code>, <code>for</code>, <code>while</code>, <code>do</code>, <code>switch</code>, <code>case</code>, <code>try</code>, <code>return</code>, <code>typeof</code>；</li>
+					<li>下列逻辑运算符前后需要加空格：<code>&&</code>, <code>||</code>；</li>
+					<li>三元运算符 <code>?</code>, <code>:</code> 前后需要加空格；</li>
+					<li>对象的属性值前需要加空格；</li>
+					<li>for 循环，分号后留有一个空格，前置条件如果有多个，逗号后留一个空格；</li>
+					<li>函数的参数之间要加空格；</li>
+					<li>一元运算符的符号前后<strong>不要</strong>加空格；</li>
+					<li>调用函数的 <code>(</code> 前<strong>不要</strong>加空格。</li>
+				</ul>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li><span class="code">if (<span class="atv">x && x === y</span>) {</span></li>
+						<li><span class="code atv">    x++;</span></li>
+						<li><span class="code">} else {</span></li>
+						<li><span class="code atv">    z = x < 10 ? '0' + x : x;</span></li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">a</span> = {</span></li>
+						<li><span class="code atv">    b: 'string',</span></li>
+						<li><span class="code">    <span class="atv">c:</span> function() {</span></li>
+						<li><span class="comment">        ...</span></li>
+						<li><span class="code">    }</span></li>
+						<li><span class="code">};</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">arr</span> = [1, 2, 3];</span></li>
+						<li></li>
+						<li><span class="code">for (var <span class="atv">i = 0, len = arr.length; i < len; i++</span>) {</li>
+						<li><span class="comment">    ...</span></li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li><span class="code">function <span class="text">doSomething</span>(<span class="atv">a, b, c</span>) {</span></li>
+						<li><span class="code">    <span class="text">foo</span>();</span></li>
+						<li><span class="comment">    ...</span></li>
+						<li><span class="code">}</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>换行与空行</h4>
+				<ul class="article">
+					<li>代码块 <code>{</code> 后和 <code>}</code> 前要换行；</li>
+					<li>变量赋值后要换行，如同时赋值多个变量，且赋给变量初始值时，则 <code>,</code> 后要换行；</li>
+					<li>同一行的代码<strong>过长</strong>时要考虑换行，具体换行规则如下：
+						<ul class="article">
+							<li>jQuery 的链式调用，在 jQuery 方法的 <code>.</code> 前换行；</li>
+							<li>逻辑运算语句换行时，运算符必须在新行的行首；</li>
+							<li>三元运算语句换行时，在 <code>?</code> 后换行。</li>
+						</ul>
+					</li>
+					<li>变量声明后要空一行（当变量声明在代码块的最后一行时，则无需空行）；</li>
+					<li>代码块后要空一行（在函数调用、数组、对象中则无需空行）。</li>
+				</ul>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li><span class="code">var<span class="atv"> x = 1,</span></span></li>
+						<li><span class="code">    <span class="atv">y = 1,</span></span></li>
+						<li><span class="code">    <span class="atv">a, b, c;</span></span></li>
+						<li></li>
+						<li><span class="code">(function(<span class="atv">$</span>) {</span></li>
+						<li><span class="code">    $('<span class="atv">#elementId</span>').find('<span class="atv">.a-very-long-name-sub-element</span>')</span></li>
+						<li><span class="code">        .css({</span></li>
+						<li><span class="code">            <span class="atv">color:</span> '<span class="atv">red</span>',</span></li>
+						<li><span class="code">            <span class="atv">fontSize:</span> '<span class="atv">18px</span>'</span></li>
+						<li><span class="code">        })</span></li>
+						<li><span class="code">        .fadeIn(<span class="atv">300</span>);</span></li>
+						<li><span class="code">})(<span class="atv">jQuery</span>);</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">iHaveVeryLongName</span> = </span></li>
+						<li><span class="code">    ((<span class="atv">a</span> && <span class="atv">b</span>) || (<span class="atv">b</span> && <span class="atv">c</span>) || (<span class="atv">a</span> && <span class="atv">c</span>)) ?</span></li>
+						<li><span class="code">    <span class="atv">x</span> + <span class="atv">y</span> : <span class="atv">x</span> - <span class="atv">y</span>;</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>分号</h4>
+				<ul class="article">
+					<li>变量声明之后要加分号；</li>
+					<li>表达式之后要加分号；</li>
+					<li><code>return</code> 语句末尾要加分号；</li>
+					<li><code>throw</code> 语句末尾要加分号；</li>
+					<li><code>break</code> 后面要加分号；</li>
+					<li><code>continue</code> 后面要加分号；</li>
+					<li><code>do-while</code> 语句末尾要加分号。</li>
+				</ul>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li><span class="code">var <span class="atv">x</span> = 1;</span></li>
+						<li></li>
+						<li><span class="code">for (var <span class="atv">i = 0; i &lt; 10; i++</span>) {</li>
+						<li><span class="code">    <span class="atv">x</span>++;</span></li>
+						<li><span class="code">    if (<span class="atv">x</span> % 2 === 0) {</span></li>
+						<li><span class="comment">        ...</span></li>
+						<li><span class="code">        continue;</span></li>
+						<li><span class="code">    }</span></li>
+						<li><span class="code">}</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>引号</h4>
+				<div class="article">
+					<p>最外层统一使用单引号。</p>
+					<p>不但比双引号输入更快捷（不用按 Shift 键），而且在插入 HTML 片段时好处十分明显。</p>
+				</div>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li><span class="code">var <span class="atv">x</span> = 'string text';</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">html</span> = </span></li>
+						<li><span class="code">    '&lt;div class=<span class="atv">"box"</span>&gt;' +</span></li>
+						<li><span class="code">        '&lt;h1&gt;<span class="text">Title</span>&lt;/h1&gt;' +</span></li>
+						<li><span class="code">        '&lt;p&gt;<span class="text">Hello World!</span>&lt;/p&gt;' +</span></li>
+						<li><span class="code">    '&lt;/div&gt;';</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>括号</h4>
+				<p class="article">
+					下列关键字后必须有大括号（即使代码块的内容只有一行）：<code>if</code>, <code>else</code>, <code>for</code>, <code>while</code>, <code>do</code>, <code>switch</code>, <code>try</code>, <code>catch</code>, <code>finally</code> 。
+				</p>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li>/* Not good */</li>
+						<li><span class="code">if (<span class="atv">conditions</span>)</span></li>
+						<li><span class="code">    return true;</span></li>
+						<li></li>
+						<li>/* Good */</li>
+						<li><span class="code">if (<span class="atv">conditions</span>) {</span></li>
+						<li><span class="code">    return true;</span></li>
+						<li><span class="code">}</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>代码注释</h4>
+				<ul class="article">
+					<li>JavaScript 的注释有两种 <code>// 注释内容</code> 和 <code>/* 注释内容 */</code>：
+						<ul class="article">
+							<li><code>// 注释内容</code> 用于单行代码注释；</li>
+							<li><code>/* 注释内容 */</code> 常用作代码段的注释，或较正式的声明中，如函数、业务功能等的描述中。</li>
+						</ul>
+					</li>
+					<li><code>/*</code> 之后、<code>*/</code> 之前和 <code>//</code> 之后要加一个空格；</li>
+					<li><code>//</code> 写在代码右侧时，其与左侧代码间隔 <code>2</code> 个空格。</li>
+				</ul>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li><span class="code">var <span class="atv">a</span> = true;</span><span class="comment">  // 同行注释</span></li>
+						<li></li>
+						// 顶格写的单行注释
+						<li><span class="code">var <span class="atv">elm</span> = ((<span class="atv">a</span> && <span class="atv">b</span>) || (<span class="atv">b</span> && <span class="atv">c</span>)) ? <span class="atv">x</span> + <span class="atv">y</span> : <span class="atv">x</span> - <span class="atv">y</span>;</span></li>
+						<li></li>
+						<li>/**</li>
+						<li class="comment"> * function name</li>
+						<li class="comment"> * @desc 一个带参数的高大上函数</li>
+						<li class="comment"> * @param {string} a - 参数 a</li>
+						<li class="comment"> * @param {number} b - 参数 b，默认值为1</li>
+						<li class="comment"> * @param {string} c - 参数 c 有两种支持的取值</br>    x - 表示情况1</br>    y - 表示情况2</li>
+						<li class="comment"> * @param {object} d - 参数 d 为一个对象</li>
+						<li class="comment"> * @param {object[]} e - 参数 e 为一个对象数组</li>
+						<li class="comment"> * @param {boolean} [f] - 参数 f 是一个可选参数</li>
+						<li class="comment"> * @return {array} - 返回一个数组</li>
+						<li class="comment"> */</li>
+						<li><span class="code">function <span class="text">foo</span>(<span class="atv">a, b, c, d, e, f</span>) {</span></li>
+						<li class="comment">    ...</li>
+						<li><span class="code">}</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>变量命名</h4>
+				<ul class="article">
+					<li>命名要符合语义，尽量避免使用拼音（约定俗成的除外，例如 youku）、无意义或理解困难、易产生歧义的字符；</li>
+					<li>标准变量采用小驼峰式命名（第一个字母小写）；</li>
+					<li>不要使用 JavaScript 中的
+						<a href="http://www.w3school.com.cn/js/pro_js_keywords.asp" target="_blank">关键字</a> 和
+						<a href="http://www.w3school.com.cn/js/pro_js_reservedwords.asp" target="_blank">保留字</a>；</li>
+					<li>不要使用未声明的变量（会变成全局变量，引起意想不到的后果）；</li>
+					<li>尽量不用全局变量；</li>
+					<li>全局变量、常量全大写，用下划线连接；</li>
+					<li>上下文中的 <code>this</code> 引用，请使用 <code>_this</code>、<code>that</code> 或 <code>self</code> 中的一个来命名；</li>
+					<li>jQuery 对象必须以 <code>$</code>	开头命名；</li>
+					<li>一些常见的英文单词：
+						<ul class="article">
+							<li>字符 <code>ID</code> 在变量名中全大写；</li>
+							<li>字符 <code>URL</code> 在变量名中全大写；</li>
+							<li>字符 <code>Android</code> 在变量名中大写第一个字母；</li>
+							<li>字符 <code>iOS</code> 在变量名中小写第一个，大写后两个字母。</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li><span class="code">var <span class="atv">thisIsMyName</span>;</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">goodID</span>;</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">reportURL</span>;</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">AndroidVersion</span>;</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">iOSVersion</span>;</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">MAX_COUNT</span> = 10;</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">self</span> = this;</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">$body</span> = $('body');</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>函数</h4>
+				<ul class="article">
+					<li>无论是函数声明还是函数表达式，<code>(</code> 前不要空格，但 <code>{</code> 前一定要有空格；</li>
+					<li>函数参数之间用 <code>,</code> 分隔，注意逗号后有一个空格；</li>
+					<li>函数名采用小驼峰式命名（第一个字母小写）；</li>
+					<li>构造函数，大写第一个字母；</li>
+					<li>私有函数（方法），命名以下划线 <code>_</code> 开头；</li>
+					<li>函数名应使用动宾短语，即动词开头的短语，常用动词如下：
+						<ul class="article">
+							<li>进行：do</li>
+							<li>新增：add</li>
+							<li>删除：del</li>
+							<li>编辑：edit</li>
+							<li>查询：query</li>
+							<li>查看：view</li>
+							<li>获取：get</li>
+							<li>设置：set</li>
+							<li>构建：build</li>
+							<li>校验：check</li>
+							<li>确认：confirm</li>
+							<li>保存：save</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li></li>
+						<li>/* Not good */</li>
+						<li><span class="code">function <span class="text">UserList</span> (<span class="atv">a</span>,<span class="atv">b</span>){</span></li>
+						<li class="comment">    ...</li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li>/* Good */</li>
+						<li><span class="code">function <span class="text">buildUserList</span>(<span class="atv">a</span>, <span class="atv">b</span>) {</span></li>
+						<li class="comment">    ...</li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li>/* Not good */</li>
+						<li><span class="code"><span class="text">doSomething</span> (<span class="atv">item</span>);</span></li>
+						<li></li>
+						<li>/* Good */</li>
+						<li><span class="code"><span class="text">doSomething</span>(<span class="atv">item</span>);</span></li>
+						<li></li>
+						<li><span class="code">function <span class="text">SetPerson</span>(<span class="atv">name</span>){</span></li>
+						<li><span class="code">    this.<span class="atv">name</span> = name;</span></li>
+						<li><span class="code">}</span></li>
+						<li><span class="code">var <span class="atv">people</span> = new <span class="text">SetPerson</span>('王大锤');</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>对象</h4>
+				<ul class="article">
+					<li>对象属性名不需要加引号；</li>
+					<li>对象以缩进的形式书写，不要写在一行；</li>
+					<li>对象最后一项末尾不要有逗号。</li>
+				</ul>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li>/* Not good */</li>
+						<li><span class="code">var <span class="atv">a</span> = {</span></li>
+						<li><span class="code">    '<span class="atv">b</span>': 1,</span></li>
+						<li><span class="code">    '<span class="atv">c</span>': 2,</span></li>
+						<li><span class="code">};</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">a</span> = {<span class="atv">b</span>: 1, <span class="atv">c</span>: 2};</span></li>
+						<li></li>
+						<li>/* Good */</li>
+						<li><span class="code">var <span class="atv">a</span> = {</span></li>
+						<li><span class="code">    <span class="atv">b</span>: 1,</span></li>
+						<li><span class="code">    <span class="atv">c</span>: 2</span></li>
+						<li><span class="code">};</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>null</h4>
+				<div class="article">
+					适用场景：
+					<ul class="article">
+						<li>初始化一个将来可能被赋值为对象的变量；</li>
+						<li>与已经初始化的变量做比较；</li>
+						<li>标记一个不再被使用的变量，来触发浏览器的垃圾回收，以便及时释放其引用。</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li>/* Not good */</li>
+						<li><span class="code">var <span class="atv">a</span>;</span></li>
+						<li></li>
+						<li><span class="code">if (<span class="atv">a</span> === null) {</span></li>
+						<li class="comment">    ...</li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li>/* Good */</li>
+						<li><span class="code">var <span class="atv">a</span> = null;</span></li>
+						<li></li>
+						<li><span class="code">if (<span class="atv">a</span> === null) {</span></li>
+						<li class="comment">    ...</li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li><span class="code">var <span class="atv">userInfos</span> = data.userInfo;</span></li>
+						<li></li>
+						<li><span class="code"><span class="text">buildUserList</span>(<span class="atv">userInfos</span>);</span></li>
+						<li><span class="code"><span class="atv">userInfos</span> = null;</span><span class="comment">  // 及时清除 userInfos 的引用，释放内存资源</span></li>
+						<li><span class="code"><span class="text">doOtherThings</span>();</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>undefined</h4>
+				<div class="article">
+					<p>永远不要直接使用 <code>undefined</code> 进行变量判断。</p>
+					<p>使用 <code>typeof</code> 和字符串 <code>undefined</code> 对变量进行判断。</p>
+				</div>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li>/* Not good */</li>
+						<li><span class="code">if (<span class="atv">person</span> === undefined) {</span></li>
+						<li class="comment">    ...</li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li>/* Good */</li>
+						<li><span class="code">if (typeof <span class="atv">person</span> === 'undefined') {</span></li>
+						<li class="comment">    ...</li>
+						<li><span class="code">}</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+		<div class="inner row">
+			<div class="col">
+				<h4>杂项</h4>
+				<ul class="article">
+					<li>用 <code>===</code>, <code>!==</code> 代替 <code>==</code>, <code>!=</code>；</li>
+					<li>不要在内置对象的原型上添加方法，如 <code>Array</code>, <code>Date</code>；</li>
+					<li>不要声明了变量却不使用；</li>
+					<li>不要在同个作用域下声明同名变量；</li>
+					<li>不要在内层作用域的代码里声明了变量，之后却访问到了外层作用域的同名变量；</li>
+					<li>不要在循环内部声明函数；</li>
+					<li>避免使用 <code>eval</code>；</li>
+					<li>不要使用 <code>with</code>；</li>
+					<li><code>for-in</code> 里一定要有 <code>hasOwnProperty</code> 的判断；</li>
+					<li>为 <code>setTimeout()</code> 和 <code>setInterval()</code> 传入函数而不是字符串。</li>
+				</ul>
+			</div>
+			<div class="col">
+				<pre class="pre-box lang-javascript">
+					<div class="pre-title"></div>
+					<ol class="pre-cont">
+						<li>/* Not good */</li>
+						<li><span class="code">if (<span class="atv">a</span> == 1) {</span></li>
+						<li><span class="code">    <span class="atv">a</span>++;</span></li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li>/* Good */</li>
+						<li><span class="code">if (<span class="atv">a</span> === 1) {</span></li>
+						<li><span class="code">    <span class="atv">a</span>++;</span></li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li>/* Not good */</li>
+						<li><span class="code">Array.prototype.count = function(<span class="atv">value</span>) {</span></li>
+						<li><span class="code">    return <span class="text">4</span>;</span></li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li>/* Not good */</li>
+						<li><span class="code">var x = 1;</span></li>
+						<li></li>
+						<li><span class="code">function <span class="text">test</span>() {</span></li>
+						<li><span class="code">    if (<span class="atv">x</span> === 10) {</span></li>
+						<li><span class="code">        var <span class="atv">x</span> = 0;</span></li>
+						<li><span class="code">    }</span></li>
+						<li><span class="code">    <span class="atv">x</span> += 1;</span></li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li>/* Good */</li>
+						<li><span class="code">for (<span class="atv">key</span> in obj) {</span></li>
+						<li><span class="code">    if (obj.hasOwnProperty(<span class="atv">key</span>)) {</span></li>
+						<li><span class="comment">        // 确保 obj[key] 属于对象而不是继承</span></li>
+						<li><span class="code">        console.log(obj[<span class="atv">key</span>]);</span></li>
+						<li><span class="code">    }</span></li>
+						<li><span class="code">}</span></li>
+						<li></li>
+						<li>/* Not good */</li>
+						<li><span class="code">setInterval('<span class="text">getStatus</span>()', 1000);</span></li>
+						<li></li>
+						<li><span class="code">setTimeout('if(!<span class="atv">true</span>){ <span class="text">doSomething</span>() }', 500);</span></li>
+						<li></li>
+						<li>/* Good */</li>
+						<li><span class="code">setInterval(<span class="text">getStatus</span>, 1000);</span></li>
+						<li></li>
+						<li><span class="code">setTimeout(</span></li>
+						<li><span class="code">    if (!<span class="atv">true</span>) {</span></li>
+						<li><span class="code">        <span class="text">doSomething</span>();</span></li>
+						<li><span class="code">    }</span></li>
+						<li><span class="code">}, 500);</span></li>
+					</ol>
+				</pre>
+			</div>
+		</div>
+	</div>
+	<div class="cont-box">
+		<h3 class="section-title" id="menuTools">编辑器配置和工具</h3>
+		<div class="inner">
+			<div class="article">
+				<p>
+					前端开发首推的编辑器是 <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>，微软出品，免费且功能强大，颜值极高，拥有较为丰富的插件资源，是一个“披着编辑器外衣的 IDE”。
+				</p>
+				<p>
+					其次是 <a href="https://atom.io/" target="_blank">Atom</a>，GitHub 御用编辑器，也是一款非常不错的免费编辑器，但对机器性能有一定要求，启动较慢。
+				</p>
+				<p>最后是 <a href="http://www.sublimetext.com" target="_blank">Sublime Text</a>，小巧轻便，速度快，是一款收费编辑器（可无限试用）。</p>
+			</div>
+			<ul class="article" style="margin-top:20px">
+				<li>VSCode 常用插件（其他编辑器一般也有类似插件）：
+					<ul class="article">
+						<li>统一团队代码风格的利器 EditorConfig：
+							<a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig" target="_blank">EditorConfig for VS Code</a>
+						</li>
+						<li>JavaScript 代码实时校验：
+							<a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank">ESLint</a>
+						</li>
+						<li>快速注释：
+							<a href="https://marketplace.visualstudio.com/items?itemName=stevencl.addDocComments#" target="_blank">Add jsdoc comments</a>
+						</li>
+						<li>SASS 的语法高亮，自动完成和代码片段：
+							<a href="https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented" target="_blank">Sass</a>
+						</li>
+						<li>快速在浏览器预览 HTML 文件：
+							<a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank">open in browser</a>
+						</li>
+					</ul>
+				</li>
+				<li>插件的配置文件<span class="notes">（请在链接上点右键“另存为”）</span>：
+					<ul class="article">
+						<li>
+							<a href="doc/tools/.editorconfig" target="_blank">.editorconfig</a>
+							<span class="notes">（包含了缩进方式、缩进字符数、字符编码、换行符等配置项）</span>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<p class="article notes">（玩命整理中...）</p>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="inner">
+			<p>
+				Open sourced under MIT. Copyright (c)
+				<script>document.write((new Date()).getFullYear())</script>
+				Wing Meng, All rights reserved.
+			</p>
+		</div>
+	</div>
 
 	<div class="inner back-top">
 		<a href="#" class="back-top-btn">TOP</a>
 	</div>
+
+	<a href="https://github.com/wingmeng/code-guide">
+		<img style="position:absolute; top:0; right:0; border:0;" src="doc/images/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+	</a>
 	<script src="router.js"></script>
 </body>
 </html>
