@@ -28,7 +28,7 @@
 
 - 不规范的命名，极易造成代码冲突，**引发低级 bug** :weary:
 
-    ![](doc/images/messy.png)
+    ![](doc/images/nonstandard.png)
 
 ## 希冀的未来
 1. 好的代码规范可以尽可能的减少项目维护成本；
