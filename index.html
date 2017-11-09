@@ -1373,7 +1373,7 @@
 		</div>
 	</div>
 	<div class="cont-box">
-		<h3 class="section-title" id="menuTools">编辑器配置和工具</h3>
+		<h3 class="section-title" id="menuTools">编辑器插件和配置文件</h3>
 		<div class="inner">
 			<div class="article">
 				<p>
@@ -1385,35 +1385,61 @@
 				<p>最后是 <a href="http://www.sublimetext.com" target="_blank">Sublime Text</a>，小巧轻便，速度快，是一款收费编辑器（可无限试用）。</p>
 			</div>
 			<ul class="article" style="margin-top:20px">
-				<li>VSCode 常用插件（其他编辑器一般也有类似插件）：
+				<li>编辑器插件：
 					<ul class="article">
-						<li>统一团队代码风格的利器 EditorConfig：
-							<a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig" target="_blank">EditorConfig for VS Code</a>
+						<li>统一团队代码风格的利器：
+							<a href="http://editorconfig.org/" target="_blank">EditorConfig</a>
 						</li>
-						<li>JavaScript 代码实时校验：
+						<li>JavaScript 代码实时校验(VSCode)：
 							<a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank">ESLint</a>
 						</li>
-						<li>快速注释：
+						<li>快速注释(VSCode)：
 							<a href="https://marketplace.visualstudio.com/items?itemName=stevencl.addDocComments#" target="_blank">Add jsdoc comments</a>
-						</li>
-						<li>SASS 的语法高亮，自动完成和代码片段：
-							<a href="https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented" target="_blank">Sass</a>
-						</li>
-						<li>快速在浏览器预览 HTML 文件：
-							<a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank">open in browser</a>
 						</li>
 					</ul>
 				</li>
-				<li>插件的配置文件<span class="notes">（请在链接上点右键“另存为”）</span>：
+				<li>插件配置文件：
 					<ul class="article">
-						<li>
-							<a href="doc/tools/.editorconfig" target="_blank">.editorconfig</a>
-							<span class="notes">（包含了缩进方式、缩进字符数、字符编码、换行符等配置项）</span>
+						<li class="row">
+							<div class="col">
+								<a href=".editorconfig" download=".editorconfig">.editorconfig</a> -
+								内容说明如下：
+								<pre class="pre-box lang-properties">
+									<div class="pre-title">properties:</div>
+									<ol class="pre-cont">
+										<li># 表明是最顶层的配置文件</li>
+										<li><span class="code">root <span class="text">= true</span></span></li>
+										<li></li>
+										<li><span class="text">[*]</span></li>
+										<li># 文件统一采用 UTF-8 无 BOM 编码</li>
+										<li><span class="code">charset <span class="text">= utf-8</span></span></li>
+										<li></li>
+										<li># 缩进方式统一使用 tab 键</li>
+										<li><span class="code">indent_style <span class="text">= tab</span></span></li>
+										<li></li>
+										<li># 缩进字符数为 4</li>
+										<li><span class="code">indent_size <span class="text">= 4</span></span></li>
+										<li></li>
+										<li># 换行符统一使用 Unix-style 0x0A（LF）</li>
+										<li><span class="code">end_of_line <span class="text">= lf</span></span></li>
+										<li></li>
+										<li># 文件以一个空白行结尾</li>
+										<li><span class="code">insert_final_newline <span class="text">= true</span></span></li>
+										<li></li>
+										<li># 自动删除行尾空格</li>
+										<li><span class="code">trim_trailing_whitespace <span class="text">= true</span></span></li>
+										<li></li>
+										<li><span class="text">[*.md]</span></li>
+										<li># markdown 文件不删除行尾空格，以免导致排版错乱</li>
+										<li><span class="code">trim_trailing_whitespace <span class="text">= false</span></span></li>
+									</ol>
+								</pre>
+							</div>
 						</li>
 					</ul>
 				</li>
 			</ul>
-			<p class="article notes">（玩命整理中...）</p>
+			<p class="article notes">（插件和配置文件玩命整理中...）</p>
 		</div>
 	</div>
 	<div class="footer">

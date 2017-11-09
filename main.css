@@ -70,7 +70,6 @@ code {padding:1px .4em 2px; font-size:90%; color:#66d9ef; background:#272822;}
 	.cont-box h4 {font-size:1.8em;}
 	.cont-box h4:before {content:attr(data-idx)'.';}
 	.cont-box .col {width:50%;}
-	.cont-box .pre-box {margin-top:3.2em;}
 
 	@media all and (max-width:900px) {
 		.cont-box .col {width:100%;}

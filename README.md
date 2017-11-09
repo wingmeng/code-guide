@@ -10,7 +10,15 @@
 - [HTML 规范](https://wingmeng.github.io/code-guide/index.html#menuHtml)
 - [CSS, SCSS 规范](https://wingmeng.github.io/code-guide/index.html#menuCSS)
 - [JavaScript 规范](https://wingmeng.github.io/code-guide/index.html#menuJS)
+- [编辑器配置和工具](https://wingmeng.github.io/code-guide/index.html#menuTools)
 
+## 规范实施流程
+1. 编辑器（或 IDE）安装对应的 EditorConfig 插件，传送门：[编辑器插件和配置文件](https://wingmeng.github.io/code-guide/index.html#menuTools)；
+1. 下载本规范的编辑器配置文件（包含了缩进方式、缩进字符数、字符编码、换行符等配置项）；
+1. 将配置文件放到项目根目录中；
+1. 严格按照规范写代码；
+1. Enjoy it!
+ 
 ## 唏嘘的过往
 先上图感受下没有代码规范的以往项目：
 
