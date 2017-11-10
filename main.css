@@ -23,6 +23,9 @@ ul ul, ol ul {list-style-type:circle;}
 code {padding:1px .4em 2px; font-size:90%; color:#66d9ef; background:#272822;}
 .pre-box {max-width:100%; padding:0; margin:20px 0; overflow:hidden; white-space:normal; word-break:break-all; word-wrap:break-word; font:14px/20px monaco, menlo, consolas, 'courier new', courier, monospace; color:#666; background-color:#444444; border:1px solid #272822; border-radius:3px;}
 	.pre-title {padding-left:10px; margin:10px 0; line-height:1.5; color:#fff;}
+	.lang-html > .pre-title:before {content:"html:";}
+	.lang-css > .pre-title:before {content:"css:";}
+	.lang-javascript > .pre-title:before {content:"javascript:";}
 	.pre-cont {padding:8px; margin-left:42px; background:#272822;}
 	.code {color:#66d9ef;}
 	.code, .comment {white-space:pre; white-space:pre-wrap;}
